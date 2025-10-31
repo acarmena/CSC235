@@ -29,4 +29,8 @@ print()
 print("Now if i wanted to print it as a variable I would say: 'variable = input('blah blah')'")
 print("Then print the variable name.")
 print("Like this:")
+
 print(name + ". See how the name you entered earlier is printed again, without you typing again?")
+print()
+
+print("congrats! See you next time.")

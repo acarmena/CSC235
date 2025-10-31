@@ -10,7 +10,7 @@ print() #spacing for readability
 ans = input("To begin, what do you think you need to type? ") #variable to save the input from user
 
 if ans == "input" : #if-else statement to handle user input
-    print("Correct! You would type this for example: input('blah blah ')")
+    print("Correct! You would type this for example: input('blah blah ')") #regular input example
     print() #spacing for readability
 else:
     print("Wrong, but! that is why we are learning!")
@@ -34,5 +34,6 @@ print("Then print the variable name.")
 print("Like this:")
 print(name + ". See how the name you entered earlier is printed again, without you typing again?") #concatinate example
 print() #spacing for readability
+
 
 print("congrats! See you next time.") #end of code

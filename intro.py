@@ -1,4 +1,7 @@
 # a Python Tutorial application on user input and slight variable usage.
+# This code will teach the user how to ask for user inputs.
+# To use this code you will answer the questions as they come.
+# To see how input work from the user side as well as the programmer side.
 # more info can be found on W3 Schools
 
 print("Hi, welcome to a Python tutorial!") #start of code
@@ -34,6 +37,5 @@ print("Then print the variable name.")
 print("Like this:")
 print(name + ". See how the name you entered earlier is printed again, without you typing again?") #concatinate example
 print() #spacing for readability
-
 
 print("congrats! See you next time.") #end of code

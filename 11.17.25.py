@@ -77,15 +77,15 @@ def play_round(round_number):
 # ------------------------------------------------------------
 # Function: summary
 # Purpose: show a summary of how the player played
-# Input: results_list (list of guesses per round or None)
+# Input: resultList (list of guesses per round or None)
 # return: none
 # ------------------------------------------------------------
-def summary(results_list):
+def summary(resultList):
     print("\n===== GAME SUMMARY =====")
 
     # use a for loop to go through each round result
     # enumerate gives both the index (round num) and the value (guesses_used)
-    for index, guesses_used in enumerate(result_list, start = 1):
+    for index, guesses_used in enumerate(resultList, start = 1):
         # if guesses_used is none, the player did not guess correctly that round
         if guesses_used is None:
             print(f"Round {index}: Did not guess correctly")
@@ -96,12 +96,12 @@ def summary(results_list):
     # 
     successful_rounds = 0
     # loop through the list again
-    for guesses_used in results_list:
+    for guesses_used in resultList:
         # if the value is not None, that means it was a successful round.
         if guesses_used != None:
             successful_rounds += 1
         # after the loop, print out how many rounds were successful
-        print(f"\nYou guessed correctly in {successful_rounds} out of {len(results_list)} round(s).")
+        print(f"\nYou guessed correctly in {successful_rounds} out of {len(resultList)} round(s).")
 
 # ------------------------------------------------------------
 # Function: Main
@@ -125,4 +125,4 @@ def Main():
     # we add 1 to should round beginging at 1
     for round_number in range(1, total_rounds + 1):
         # call play round and capture the result
-        
+        play_round()
